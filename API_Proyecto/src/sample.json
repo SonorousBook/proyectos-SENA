@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "title": "Interstellar",
+    "director": "Christopher Nolan",
+    "year": "2014",
+    "raiting": "9.0"
+  },
+  {
+    "id": "2",
+    "title": "Parasite",
+    "director": "Bong Joon-ho",
+    "year": "2019",
+    "raiting": "8.6"
+  },
+  {
+    "id": "3",
+    "title": "Coco",
+    "director": "Lee Unkrich",
+    "year": "2017",
+    "raiting": "8.4"
+  }
+]
