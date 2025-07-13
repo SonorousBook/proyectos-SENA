@@ -1,0 +1,112 @@
+/* ===== RESET GENERAL ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+/* ===== PALETA DE COLORES CORPORATIVOS ===== */
+:root {
+  --color-fondo: #f5f5f5;
+  --color-principal: #005792;
+  --color-texto: #333;
+  --color-claro: #ffffff;
+  --color-error: #c00;
+  --color-boton: #666;
+  --color-boton-hover: #4a4a4a;
+}
+
+/* ===== CUERPO GENERAL ===== */
+body {
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ===== CONTENEDOR PRINCIPAL DEL LOGIN ===== */
+.container-login {
+  display: flex;
+  width: 900px;
+  background: var(--color-claro);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* ===== LADOS (FORMULARIO E INFO) ===== */
+.left, .right {
+  padding: 40px;
+  width: 50%;
+}
+
+/* ===== TEXTO DE BIENVENIDA ===== */
+.left h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.left p.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* ===== CAMPOS DE ENTRADA ===== */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+  border-color: var(--color-principal);
+  outline: none;
+}
+
+/* ===== BOTÓN DE INICIO DE SESIÓN ===== */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: var(--color-boton);
+  color: var(--color-claro);
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: var(--color-boton-hover);
+}
+
+button:focus {
+  outline: 2px solid var(--color-principal);
+}
+
+/* ===== MENSAJE DE ERROR ===== */
+.error-message {
+  color: var(--color-error);
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  background-color: #ffe6e6;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* ===== OCULTAR ELEMENTOS ===== */
+.hidden {
+  display: none;
+}

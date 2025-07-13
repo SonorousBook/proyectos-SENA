@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | Tarkus</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container-login">
+    <!-- Lado izquierdo -->
+    <div class="left">
+      <h1>Welcome to Tarkus</h1>
+      <p class="subtitle">Manage technical visits, schedule maintenance, and enhance service quality.</p>
+
+      <form id="loginForm">
+        <div class="input-group">
+          <input type="text" id="username" placeholder="Username" required>
+        </div>
+        <div class="input-group">
+          <input type="password" id="password" placeholder="Password" required>
+        </div>
+        <button type="submit">Log in</button>
+        <p id="loginError" class="error-message hidden"></p>
+      </form>
+    </div>
+
+    <!-- Lado derecho (texto + imagen de relleno) -->
+    <div class="right">
+      <h2>Solution for scheduling and tracking maintenance operations</h2>
+      <p>Tarkus helps you streamline technical visits, manage technicians, and generate reports—all to ensure efficient maintenance and top‑notch service quality.</p>
+      <!-- Aquí podrías poner el logo o una ilustración -->
+    </div>
+  </div>
+
+  <script src="assets/js/login.js"></script>
+</body>
+</html>

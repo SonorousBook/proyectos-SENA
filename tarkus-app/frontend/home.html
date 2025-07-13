@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gestor de Servicios Técnicos</title>
+  <link rel="stylesheet" href="assets/css/home.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>Gestor de Servicios Técnicos</h1>
+    <div class="header-right">
+      <span id="nombreUsuario">Usuario</span>
+      <button class="logout-btn" onclick="cerrarSesion()">Cerrar sesión</button>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <div class="main">
+    <!-- Menú lateral -->
+    <aside>
+      <h3>Menú</h3>
+      <button onclick="location.href='home.html'">🏠 Inicio</button>
+      <button id="btnAgregarUsuario">👤 Agregar usuario</button>
+      <button disabled>⚙️ Configuración</button>
+    </aside>
+
+    <!-- Zona de contenido -->
+    <div class="content">
+      <!-- Bienvenida -->
+      <div class="welcome-card">
+        <h2>Bienvenido(a), <span id="nombreUsuarioCard">...</span></h2>
+        <p>Rol: <span id="rolUsuario">...</span></p>
+      </div>
+
+      <!-- Calendario -->
+      <div class="calendar">
+        <h3 id="calendar-title">Calendario</h3>
+        <table id="calendar-body">
+          <!-- Se genera desde JS -->
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal para agregar usuario -->
+  <div id="modalAgregarUsuario" class="modal hidden">
+    <div class="modal-content">
+      <h2>Agregar nuevo usuario</h2>
+      <form id="formAgregarUsuario">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="numeroIdentificacion">Número de identificación:</label>
+        <input type="text" id="numeroIdentificacion" name="numeroIdentificacion" required />
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required />
+
+        <label for="correoElectronico">Correo electrónico:</label>
+        <input type="email" id="correoElectronico" name="correoElectronico" required />
+
+        <label for="rol">Rol:</label>
+        <select id="rol" name="rol" required>
+          <option value="Administrador">Administrador</option>
+          <option value="Analista">Analista</option>
+          <option value="Técnico">Técnico</option>
+        </select>
+
+        <button type="submit">Crear usuario</button>
+        <button type="button" id="btnCancelar">Cancelar</button>
+      </form>
+      <div id="respuestaCreacion" class="respuesta"></div>
+      <div id="btnCopiar" class="hidden">
+        <button onclick="copiarContrasena()">📋 Copiar contraseña</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script principal -->
+  <script src="assets/js/home.js"></script>
+</body>
+</html>

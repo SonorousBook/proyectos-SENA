@@ -1,0 +1,239 @@
+/* === RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === PALETA CORPORATIVA === */
+:root {
+  --color-principal: #005792;
+  --color-oscuro: #2f2f2f;
+  --color-claro: #f3f3f3;
+  --color-boton: #5a5a5a;
+  --color-texto: #333;
+  --color-blanco: #ffffff;
+}
+
+/* === GENERAL === */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--color-claro);
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* === HEADER === */
+header {
+  background-color: var(--color-principal);
+  color: var(--color-blanco);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+/* === BOTÓN CERRAR SESIÓN === */
+.logout-btn {
+  background-color: var(--color-boton);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #444;
+}
+
+/* === LAYOUT === */
+.main {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+/* === SIDEBAR === */
+aside {
+  background-color: var(--color-oscuro);
+  width: 200px;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: white;
+}
+
+aside button {
+  background-color: var(--color-principal);
+  border: none;
+  padding: 0.6rem;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  text-align: left;
+}
+
+aside button:hover {
+  background-color: #004570;
+}
+
+/* === CONTENIDO === */
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+/* === PANEL BIENVENIDA === */
+.welcome-card {
+  background: var(--color-blanco);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.welcome-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-texto);
+}
+
+.welcome-card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--color-texto);
+}
+
+/* === CALENDARIO === */
+.calendar {
+  width: 300px;
+  background: var(--color-blanco);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.calendar h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--color-texto);
+}
+
+.calendar table {
+  width: 100%;
+  text-align: center;
+  border-spacing: 4px;
+}
+
+.calendar td {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.calendar .today {
+  background-color: var(--color-principal);
+  color: white;
+  font-weight: bold;
+}
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: #005792;
+}
+
+.modal-content label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.modal-content input,
+.modal-content select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal-content button {
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-content button[type="submit"] {
+  background-color: #005792;
+  color: white;
+}
+
+.modal-content button[type="submit"]:hover {
+  background-color: #004570;
+}
+
+.modal-content button[type="button"] {
+  background-color: #ccc;
+  margin-left: 10px;
+}
+
+.respuesta {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: green;
+}
+
+.hidden {
+  display: none;
+}
+.card {
+  background: var(--color-blanco);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.admin-btn {
+  background-color: var(--color-principal);
+  color: white;
+  padding: 0.7rem 1.5rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.admin-btn:hover {
+  background-color: #004570;
+}
